@@ -11,8 +11,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-
       - name: Run Accessibility Checker
-        uses: berkeley-dsep-infra/jupyterlab-a11y-checker@main
+        uses: berkeley-dsep-infra/jupyterlab-a11y-checker@0.2.7
         with:
           files: "notebooks/**/*.ipynb"
